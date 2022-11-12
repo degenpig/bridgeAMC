@@ -1,0 +1,32 @@
+{
+  "name": "bridge",
+  "version": "1.0.0",
+  "description": "token bridge between Ethereum and Binance Smart Chain",
+  "main": "out/index.js",
+  "scripts": {
+    "prepare": "npm run gcp-build",
+    "pretest": "npm run gcp-build",
+    "posttest": "npm run lint",
+    "lint": "tslint -p .",
+    "start": "node ./out/index.js",
+    "gcp-build": "tsc -p .",
+    "deploy": "gcloud app deploy"
+  },
+  "author": "Janibek6119",
+  "engines": {
+    "node": "12"
+  },
+  "dependencies": {
+    "@google-cloud/logging-bunyan": "^3.0.2",
+    "@uniswap/sdk": "^3.0.3",
+    "axios": "^0.21.1",
+    "bunyan": "^1.8.15",
+    "cors": "^2.8.5",
+    "ethers": "^5.0.32",
+    "express": "^4.17.1",
+    "firebase": "^8.2.4",
+    "firebase-admin": "^9.4.2",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {}
+}

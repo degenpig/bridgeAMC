@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2019",
+    "jsx": "preserve",
+    "strict": true,
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "outDir": "out"
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "functions"]
+}
